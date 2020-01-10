@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 
+Route::post('/register','login\LoginController@register');
+Route::post('/login','login\LoginController@login');
+Route::post('/redis','login\LoginController@redistest');
+Route::post('/getinfo','login\LoginController@getinfo');
